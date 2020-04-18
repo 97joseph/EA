@@ -1,5 +1,5 @@
 //+------------------------------------------------------------------+
-//|               
+//|  Refactor code to bare funnctions calls to reduce call overhead             
 //+-------------------  --------------------+
    
    /* 
@@ -124,7 +124,7 @@ int start() {
             //| Signal Begin(Exit Buy)                                           |
             //+------------------------------------------------------------------+
 
-            /* ADELINE EXIT RULES:
+            /*  EXIT RULES:
                Exit the long trade when SMA(10) crosses SMA(40) from top
                Exit the short trade when SMA(10) crosses SMA(40) from bottom
                30 pips hard stop (30pips from initial entry price)
@@ -190,7 +190,7 @@ int start() {
    //| Signal Begin(Entries)                                            |
    //+------------------------------------------------------------------+
 
-   /* ADELINE ENTRY RULES:
+   /*  ENTRY RULES:
       Enter a long trade when SMA(10) crosses SMA(40) from bottom
       Enter a short trade when SMA(10) crosses SMA(40) from top
    */
